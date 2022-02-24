@@ -1,6 +1,9 @@
 # Simple Database Challenge by Thumbtack
 
-In the Simple Database problem, you'll implement an in-memory database similar to Redis. For simplicity's sake, instead of dealing with multiple clients and communicating over the network, your program will receive commands via standard input (stdin), and should write appropriate responses to standard output (stdout). Guidelines
+In the Simple Database problem, you'll implement an in-memory database similar to Redis. For simplicity's sake, instead of dealing with multiple clients and communicating over the network, your program will receive commands via standard input (stdin), and should write appropriate responses to standard output (stdout). 
+
+
+Guidelines
 
 This problem should take you between 30 and 90 minutes. We recommend that you use a high-level language, like Python, Ruby, JavaScript, or Java. We're much more interested in seeing clean code and good algorithmic performance than raw throughput. It is very helpful to the engineers who grade these challenges if you reduce external dependencies, make compiling your code as simple as possible, and include instructions for compiling and/or running your code directly from the command line.
 
@@ -17,7 +20,7 @@ SET name value – Set the variable name to the value value. Neither variable na
 
 GET name – Print out the value of the variable name, or NULL if that variable is not set.
 
-UNSET name – Unset the variable name, making it just like that variable was never set.
+DELETE name – DELETE the variable name, making it just like that variable was never set.
 
 COUNT value – Count number of apperances of specific value
 
@@ -30,7 +33,7 @@ EXIT – Exit the program. Your program will always receive this as its last com
 INPUT	    OUTPUT
 SET ex 10   10
 GET ex
-UNSET ex
+DELETE ex
 GET ex      NULL
 EXIT
 ```
@@ -86,7 +89,7 @@ BEGIN
 GET a       50
 SET a 60
 BEGIN
-UNSET a
+DELETE a
 GET a       NULL
 ROLLBACK
 GET a       60
@@ -97,7 +100,6 @@ EXIT
 
 
 
-
 ## Performance Considerations
 
-The most common operations are GET, SET, UNSET, and COUNT. All of these commands should have an expected worst-case runtime of O(log N) or better, where N is the total number of variables stored in the database. The vast majority of transactions will only update a small number of variables. Accordingly, your solution should be efficient about how much memory each transaction uses.
+The most common operations are GET, SET, DELETE, and COUNT. All of these commands should have an expected worst-case runtime of O(log N) or better, where N is the total number of variables stored in the database. The vast majority of transactions will only update a small number of variables. Accordingly, your solution should be efficient about how much memory each transaction uses.

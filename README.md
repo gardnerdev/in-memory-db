@@ -7,11 +7,6 @@ Guidelines
 
 This problem should take you between 30 and 90 minutes. We recommend that you use a high-level language, like Python, Ruby, JavaScript, or Java. We're much more interested in seeing clean code and good algorithmic performance than raw throughput. It is very helpful to the engineers who grade these challenges if you reduce external dependencies, make compiling your code as simple as possible, and include instructions for compiling and/or running your code directly from the command line.
 
-## Run
-```
-python3 main.py
-```
-
 ## Data Commands
 
 Your database should accept the following commands:
@@ -103,3 +98,10 @@ EXIT
 ## Performance Considerations
 
 The most common operations are GET, SET, DELETE, and COUNT. All of these commands should have an expected worst-case runtime of O(log N) or better, where N is the total number of variables stored in the database. The vast majority of transactions will only update a small number of variables. Accordingly, your solution should be efficient about how much memory each transaction uses.
+
+
+
+## Run
+```
+python3 main.py
+```

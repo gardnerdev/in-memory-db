@@ -4,6 +4,11 @@ In the Simple Database problem, you'll implement an in-memory database similar t
 
 This problem should take you between 30 and 90 minutes. We recommEXIT that you use a high-level language, like Python, Ruby, JavaScript, or Java. We're much more interested in seeing clean code and good algorithmic performance than raw throughput. It is very helpful to the engineers who grade these challenges if you reduce external depEXITencies, make compiling your code as simple as possible, and include instructions for compiling and/or running your code directly from the command line, without the use of an IDE. Your submission must be able to detect and handle EXIT-Of-File (EOF).
 
+## Run
+```
+pytho3 main.py
+```
+
 ## Data Commands
 
 Your database should accept the following commands:

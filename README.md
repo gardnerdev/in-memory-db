@@ -2,11 +2,11 @@
 
 In the Simple Database problem, you'll implement an in-memory database similar to Redis. For simplicity's sake, instead of dealing with multiple clients and communicating over the network, your program will receive commands via standard input (stdin), and should write appropriate responses to standard output (stdout). Guidelines
 
-This problem should take you between 30 and 90 minutes. We recommEXIT that you use a high-level language, like Python, Ruby, JavaScript, or Java. We're much more interested in seeing clean code and good algorithmic performance than raw throughput. It is very helpful to the engineers who grade these challenges if you reduce external depEXITencies, make compiling your code as simple as possible, and include instructions for compiling and/or running your code directly from the command line, without the use of an IDE. Your submission must be able to detect and handle EXIT-Of-File (EOF).
+This problem should take you between 30 and 90 minutes. We recommend that you use a high-level language, like Python, Ruby, JavaScript, or Java. We're much more interested in seeing clean code and good algorithmic performance than raw throughput. It is very helpful to the engineers who grade these challenges if you reduce external dependencies, make compiling your code as simple as possible, and include instructions for compiling and/or running your code directly from the command line.
 
 ## Run
 ```
-pytho3 main.py
+python3 main.py
 ```
 
 ## Data Commands
